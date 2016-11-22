@@ -1,0 +1,39 @@
+.text-area,
+.article-text {
+  margin: 0 0 40px;
+  padding: 0 40px 0 0;
+
+  p {
+    margin: 0 0 40px;
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  p + ol,
+  p + ul {
+    margin-top: -30px;
+  }
+
+  ul, ol {
+    list-style: none;
+    margin: 0 0 27px 20px;
+  }
+
+  ul, ol {
+    ul, ol {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    > li {
+      &::before {
+        margin: 0 10px 0 0;
+        font-weight: 700;
+        content: "―";
+      }
+    }
+  }
+}

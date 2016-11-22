@@ -1,7 +1,7 @@
 window.jQuery = window.$ = require('jquery')
 window.jade = require('./lib/pug-runtime')
 
-attachFastClick = require('./lib/fastclick')
+require('fastclick')
 
 data = require('./data/posts')
 ga = require('./ga')

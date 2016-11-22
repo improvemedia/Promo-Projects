@@ -1,45 +1,5 @@
-doctype html
-html.no-js(lang='')
-  head
-    meta(charset='utf-8')
-    meta(name='description', content='Спецпроект «Азбука ремонта» от МТС')
-    meta(name="viewport", content="width=device-width, initial-scale=1, minimal-ui")
+extends ./Templates/layout.jade
 
-    meta(property='fb:app_id', content='239854476109563')
-    meta(property='og:title', content='Азбука ремонта от МТС')
-    meta(property='og:description', content='спланируй свой ремонт от А до Я')
-    meta(property='og:image', content='https://cdn.inmyroom.ru/uploads/upload/file/233/MHsLad56BX4.jpg')
-    title Азбука ремонта от МТС
-    link(rel="stylesheet" href="./assets/main.css")
-    link(href='./assets/favicon.png', rel='shortcut icon', type='image/vnd.microsoft.icon')
-  body
-    .header(data-component="header")
-      .container
-        .header_toggler.js-headerToggler
-          span
-          span
-          span
-
-        a.header_logo(href='http://www.inmyroom.ru')
-              img(src="./assets/logo.svg")
-
-        ul.header_nav
-          li.header_nav_item
-            a.header_nav_link(href="//inmyroom.ru/my/feed" target="_blank") Моя лента
-          li.header_nav_item
-            a.header_nav_link(href="//inmyroom.ru/posts" target="_blank") Идеи
-          li.header_nav_item
-            a.header_nav_link(href="//inmyroom.ru/products" target="_blank") Магазин
-          li.header_nav_item
-            a.header_nav_link(href="//inmyroom.ru/photos" target="_blank") Фото
-          li.header_nav_item
-            a.header_nav_link(href="//inmyroom.ru/discussions" target="_blank") Советы
-          li.header_nav_item
-            a.header_nav_link(href="//inmyroom.ru/profi" target="_blank") Профи
-
-        a.header_promo-logo(href="http://www.mts.ru/" target="_blank")
-          img(src='./assets/mts_header_logo.png')
-
-
-    script(src='./assets/templates.js')
-    script(src='./assets/main.js')
+block title
+  title Взгляд в корзинку: как хорошо вы выбираете продукты питания?
+block content

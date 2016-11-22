@@ -1,0 +1,18 @@
+@import 'shared';
+
+.me-expert {
+  margin: 0 20px;
+}
+
+.me-expert_avatar {
+  width: 152px;
+  height: 152px;
+}
+
+.me-expert_bio {
+  margin: 20px 0 0;
+  max-width: 420px;
+  font-size: 19px;
+  line-height: 1.55;
+  color: #999;
+}

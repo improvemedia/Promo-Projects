@@ -1,0 +1,32 @@
+.me-experts {
+  text-align: center;
+}
+
+.me-expert {
+  display: inline-block;
+}
+
+.me-expert_avatar {
+  margin: auto;
+  width: 152px;
+  height: 152px;
+  border: 1px solid #eee;
+  border-radius: 50%;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.me-expert_name {
+  margin: 15px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.me-expert_info {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: rgb(136, 136, 136);
+  text-transform: uppercase;
+}
