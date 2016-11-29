@@ -2,6 +2,7 @@
   background-color: white;
   z-index: 15;
   box-shadow: 4px 0 10px #565656;
+  margin-bottom: 50px;
 
   @include lp(768) {
     padding: 10px;
@@ -16,10 +17,11 @@
 }
 
 .header_logo {
+  display: block;
+  width: 191px;
   position: relative;
   z-index: 1;
-  margin: -5px 30px 0 0;
-  float: left;
+  margin: 30px auto 80px;
 }
 
 .header_nav {

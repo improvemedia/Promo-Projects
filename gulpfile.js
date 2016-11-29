@@ -120,7 +120,7 @@ gulp.task('deploy', function() {
     })
 
     gulp.src('./build/**')
-      .pipe(gulpSSH.dest('/srv/mtsazbukaremonta.inmyroom.ru/'))
+      .pipe(gulpSSH.dest('/srv/promo-previews.inmyroom.ru'))
   })
 })
 

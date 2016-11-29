@@ -11,14 +11,10 @@ html
     link(rel="stylesheet" href="/assets/main.css")
   body
 
-    include ../partials/header.jade        
-    .container
-      .article
-        .article_content
-          block content
-          include ../partials/article_content.jade
-
+    a.header_logo(href='http://www.inmyroom.ru')
+      img(src="./assets/logo.svg")
     
+    block content
 
     script(src='/assets/templates.js')
     script(src='/assets/main.js')

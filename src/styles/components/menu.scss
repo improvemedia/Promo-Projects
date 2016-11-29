@@ -1,0 +1,41 @@
+.menu {
+  display: block;
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  margin-left: -310px;
+  box-sizing: content-box;
+
+  &.hd {
+    margin-left: -155px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 5px 20px;
+    color: #565656;
+    border: 2px solid #bd302a;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: white;
+
+
+    &:hover {
+      a {
+        color: #bd302a;
+      }
+    }
+
+    &:first-child {
+      border-radius: 4px 0 0 4px;
+    }
+
+    &:nth-child(2) {
+      border-width: 2px 0 2px 0;
+    }
+
+    &:last-child {
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.oven-promo_placeholder {
+  min-height: 500px;
+  width: 100%;
+}
+
+.oven-promo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 500px;
+  background-color: #252021;
+  padding-right: 20%;
+  color: white;
+}
+
+.oven-promo_pic {
+  float: left;
+  width: 40%;
+  height: 500px;
+  margin-right: 30px;
+  background-image: url("https://cdn.inmyroom.ru/uploads/upload/file/301/oven-bg.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.oven-promo_title,
+.oven-promo_desc {
+  padding: 0 0 0 40%;
+}
+
+.oven-promo_title {
+  display: block;
+  margin: 50px 0 20px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.oven-promo_desc {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.oven-promo_img {
+  margin: 30px 0 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .oven-promo_desc {
+    padding-right: 8%;
+  }
+}

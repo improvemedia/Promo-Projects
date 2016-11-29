@@ -1,5 +1,45 @@
 extends ./Templates/layout.jade
 
-block title
-  title Взгляд в корзинку: как хорошо вы выбираете продукты питания?
 block content
+  .page.page-index
+    .container
+      .promo-theme.promo-theme__custom
+        .promo-theme_title КАСТОМНЫЕ ПРОМО-ПРОЕКТЫ
+        .promo-block
+          a.promo-preview.promo-preview__mts(href="https://www.inmyroom.ru/landing/mtsazbukaremonta/")
+            img(src="./assets/mts.png")
+            .promo-preview_brand МТС
+            .promo-preview_title Уникальная промо-зона с интерактивом
+        .promo-block
+          a.promo-preview.promo-preview__timemachine(href="http://electrolux-cleaning.inmyroom.ru/")
+            img(src="./assets/timemachine.png")
+            .promo-preview_brand Electrolux
+            .promo-preview_title Уникальная промо-зона с советами
+            
+        .promo-block
+          a.promo-preview.promo-preview__testdrive(href="http://electrolux-testdrive.inmyroom.ru/")
+            img(src="./assets/testdrive.png")
+            .promo-preview_brand Electrolux
+            .promo-preview_title Съемка продуктов бренда для материалов
+            
+        .promo-block
+          a.promo-preview.promo-preview__vtb(href="http://remontsvtb24.inmyroom.ru/")
+            img(src="./assets/vtb.png")
+            .promo-preview_brand ВТБ 24
+            .promo-preview_title Тест для помощи в выборе продуктов бренда
+            
+
+      .promo-theme.promo-theme__articles
+        .promo-theme_title ПРОМО В СТАТЬЯХ
+        .promo-block.first
+          .promo-main_title ВЫБЕРИТЕ ТИП СТАТЬИ
+          .promo-main-btn#default Обычная статья
+          .promo-main-btn#hd Статья HD
+        .promo-block.second.is-hidden
+          .promo-main_title ВЫБЕРИТЕ ТИП ПРОМОПРОЕКТА
+          a.promo-main-btn#branding Брендирование фона статьи
+          a.promo-main-btn#banner Промо-зона в конце статьи
+          a.promo-main-btn#menu Доп. меню
+          a.promo-main-btn#products Товары
+          a.promo-main-btn#static Баннер в статье
+          //- a.promo-main-btn#elem Уникальная верстка
