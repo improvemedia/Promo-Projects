@@ -26,14 +26,14 @@ var config = {
   styles: './src/styles/**/*.scss',
   scripts: './src/scripts/**/*',
   pages: './src/pages/*.jade',
-  templates: './src/templates/*.jade',
+  // templates: './src/templates/*.jade',
   images: './src/images/*',
   fonts: './src/fonts/*',
   sprite: './src/icons/*.png'
 };
 
 gulp.task('default', ['build', 'watch', 'connect']);
-gulp.task('build', ['styles', 'pages', 'scripts', 'templates', 'images', 'fonts', 'sprite']);
+gulp.task('build', ['styles', 'pages', 'scripts', 'images', 'fonts', 'sprite']);
 
 gulp.task('connect', function() {
  connect.server({
@@ -95,18 +95,18 @@ gulp.task('sprite', function () {
   return merge(imgStream, cssStream)
 });
 
-gulp.task('templates', function() {
-  gulp.src(config.templates)
-    .pipe(jade({
-      client: true
-    }))
-    .pipe(declare({
-      namespace: 'Templates',
-      noRedeclare: true // Avoid duplicate declarations
-    }))
-    .pipe(concat('templates.js'))
-    .pipe(gulp.dest('./build/assets'))
-});
+// gulp.task('templates', function() {
+//   gulp.src(config.templates)
+//     .pipe(jade({
+//       client: true
+//     }))
+//     .pipe(declare({
+//       namespace: 'Templates',
+//       noRedeclare: true // Avoid duplicate declarations
+//     }))
+//     .pipe(concat('templates.js'))
+//     .pipe(gulp.dest('./build/assets'))
+// });
 
 gulp.task('deploy', function() {
   ['app1.improvemedia.ru', 'app2.improvemedia.ru'].forEach(function(host) {
@@ -191,7 +191,7 @@ gulp.task('watch', function() {
   gulp.watch(config.styles,    ['styles']);
   gulp.watch(config.scripts,   ['scripts']);
   gulp.watch('./src/pages/**',     ['pages']);
-  gulp.watch(config.templates, ['templates']);
+  // gulp.watch(config.templates, ['templates']);
   gulp.watch(config.images,    ['images']);
   gulp.watch(config.fonts,     ['fonts']);
   gulp.watch(config.sprite,    ['sprite']);

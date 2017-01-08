@@ -1,4 +1,10 @@
-extends ./Templates/article.jade
+extends ./Templates/article_washer.jade
 
-block promo
-  include partials/washer.jade 
+block panel
+  .nav-panel.nav-panel_washer
+    a.nav-panel_item(href="http://promo-previews.inmyroom.ru/article_branding.html") Брендинг фона
+    a.nav-panel_item(href="http://promo-previews.inmyroom.ru/article_banner.html") Промо в конце
+    a.nav-panel_item(href="http://promo-previews.inmyroom.ru/article_menu.html") Доп. меню
+    a.nav-panel_item(href="http://promo-previews.inmyroom.ru/article_products.html") Товары
+    a.nav-panel_item(href="http://promo-previews.inmyroom.ru/article_hd_banner_small.html") Баннер в статье
+    a.nav-panel_item.is-active(href="http://promo-previews.inmyroom.ru/article_washer.html") Уникальная верстка

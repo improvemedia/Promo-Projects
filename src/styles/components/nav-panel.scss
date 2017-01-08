@@ -1,7 +1,7 @@
 .nav-panel {
   position: fixed;
   top: 100px;
-  left: -150px;
+  left: -120px;
   padding: 10px 10px 0;
   background-color: white;
   border-radius: 4px;
@@ -12,11 +12,20 @@
   &:hover {
     left: -20px;
   }
+
+  &.nav-panel_washer {
+    left: 98%;
+
+    &:hover {
+      left: 90%;
+    }
+  }
 }
 
 .nav-panel_item {
   display: block;
   margin: 0 0 10px;
+  max-width: 125px;
   padding: 10px 15px 10px 20px;
   border-radius: 4px;
   box-shadow: 0 0 1px #565656;

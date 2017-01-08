@@ -1,8 +1,6 @@
 window.jQuery = window.$ = require('jquery')
 window.jade = require('./lib/pug-runtime')
 
-# require('fastclick')
-
 data = require('./data/posts')
 ga = require('./ga')
 
@@ -10,13 +8,15 @@ require('./lib/component')
 require('./components/header')
 require('./components/share-btn')
 require('./components/products')
-require('./components/washer')
-
-# attachFastClick(document.body)
+stickyWasher = require('./components/stickywasher')
+washer = require('./components/washer_new')
 
 $(document).ready ->
 
   Component.vitalize()
+  stickyWasher.init()
+  washer.init()
+  
 
   $('.promo-main-btn').click ->
     $('.is-hidden').removeClass('is-hidden')
@@ -28,7 +28,8 @@ $(document).ready ->
     $('#banner').attr('href', 'http://promo-previews.inmyroom.ru/article_hd_banner.html')
     $('#menu').attr('href', 'http://promo-previews.inmyroom.ru/article_hd_menu.html')
     $('#products').attr('href', 'http://promo-previews.inmyroom.ru/article_hd_products.html')
-    $('#static').attr('href', 'http://promo-previews.inmyroom.ru/article_hd_banner_small.html'); 
+    $('#static').attr('href', 'http://promo-previews.inmyroom.ru/article_hd_banner_small.html')
+    $('#washer').css({'opacity': 1}) 
 
   $('#default').click ->
     $('.promo-main-btn').removeClass('is-active')
@@ -37,4 +38,5 @@ $(document).ready ->
     $('#banner').attr('href', 'http://promo-previews.inmyroom.ru/article_banner.html')
     $('#menu').attr('href', 'http://promo-previews.inmyroom.ru/article_menu.html')
     $('#products').attr('href', 'http://promo-previews.inmyroom.ru/article_products.html')
-    $('#static').attr('href', 'http://promo-previews.inmyroom.ru/article_banner_small.html');
+    $('#static').attr('href', 'http://promo-previews.inmyroom.ru/article_banner_small.html')
+    $('#washer').css({'opacity': 0}) 
