@@ -4,6 +4,7 @@ Component.define 'stickyWasher',
   events:
     'scroll on window': 'onScroll'
     'resize on window': 'calculatePoints'
+    'load on window': 'calculatePoints'
 
   offsetTop: 80
 

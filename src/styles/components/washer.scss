@@ -3,7 +3,10 @@
     transform: rotate(360deg); } }
 
 .p-washer {
-  position: relative;
+  position: absolute;
+  top: 0;
+  // left: -50%;
+  margin-left: -250px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -166,6 +169,12 @@
     margin-top: 10px; }
   .p-washer_panel_control:nth-child(6) {
     margin-top: 12px; }
+
+.p-layout__m {
+  .p-post_main {
+    position: relative;
+  }
+}
 
 .p-layout__xs .p-washer:hover .p-washer_panel-toggle,
 .p-layout__s .p-washer:hover .p-washer_panel-toggle {

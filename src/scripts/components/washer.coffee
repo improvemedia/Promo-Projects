@@ -5,8 +5,6 @@ Component.define 'washer',
     'click on %openPanel':  'onOpenPanel'
     'mouseleave on %panel': 'onClosePanel'
 
-  prevent: -> device.isTouch
-
   onOpenPanel: ->
     @$('%panel').addClass('is-opened')
 
