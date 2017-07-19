@@ -10,6 +10,7 @@ require('./components/share-btn')
 require('./components/products')
 require('./components/stickyWasher')
 require('./components/washer')
+require('./components/promoTeasers')
 
 $(document).ready ->
 
